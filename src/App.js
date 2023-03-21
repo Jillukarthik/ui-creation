@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+// import bgImage from "../src/Assessts/backgroundIMG.jpg"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ErrorBoundary } from "react-error-boundary";
+import Home from "./components/Home/Home";
+import ShowError from "./ShowError";
+import Dashboard from "./components/Dashboard/Dashboard";
+import Profile from "./components/Profile/Profile";
+import Post from "./components/Post/Post";
+import Gallery from "./components/Gallery/Gallery";
+import Todo from "./components/Todo/Todo";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <ErrorBoundary FallbackComponent={ShowError}>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/post" element={<Post />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/todo" element={<Todo />} />
+          </Routes>
+        </Router>
+      </ErrorBoundary>
     </div>
   );
 }

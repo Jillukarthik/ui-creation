@@ -1,0 +1,80 @@
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url("C:\Users\2001k\OneDrive\Desktop\ui-creation\src\Assessts\backgroundIMG.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+.home__data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.home__group{
+    width: 30%;
+    height: 60vh;
+    background-color:#fafafa;
+    border-radius: 20px;
+}
+
+.home__titleheading{
+    text-align: center;
+    height: 70px;
+    background-color: #f9f1f1;
+    border-radius: 20px;
+}
+
+.home__title{
+    position: relative;
+    top: 13px;
+}
+
+.home__content{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 50vh;
+    scrollbar-width: thin;
+}
+
+
+.home__content::-webkit-scrollbar { 
+    width: 10px;
+    background-color: #ccc; 
+    border-radius: 12px !important;
+  } 
+
+ 
+
+.home__item{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    margin-left: 24px;
+    margin-top: 12px;
+    cursor: pointer;
+    
+}
+
+
+.data__image{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+
+.data__name{
+    margin-left: 12px;
+}
+.data__line{
+    width: 80%;
+    position: relative;
+    left: 24px;
+    top: 8px;
+}
