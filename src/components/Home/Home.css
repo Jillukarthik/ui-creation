@@ -35,19 +35,11 @@
 }
 
 .home__content{
-    overflow-y: scroll;
     overflow-x: hidden;
+    overflow-y:scroll;
     height: 50vh;
-    scrollbar-width: thin;
+
 }
-
-
-.home__content::-webkit-scrollbar { 
-    width: 10px;
-    background-color: #ccc; 
-    border-radius: 12px !important;
-  } 
-
  
 
 .home__item{

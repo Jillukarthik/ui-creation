@@ -6,7 +6,7 @@ function Dashboard({ children }) {
   const navigate = useNavigate();
 
   const handleProfile = () => {
-    navigate("/Profile");
+    navigate("/profile");
   };
 
   const handlePost = () => {
@@ -27,33 +27,33 @@ function Dashboard({ children }) {
         <div className="dashboard__left">
           <div className="dashboard__data">
             <div className="dashboard__items" onClick={handleProfile}>
-              <h4 className="dashboard__profile">Profile</h4>
+              <h4 className="dashboard__profile" >Profile</h4>
               <div>
                 <BiChevronRight className="dashboard__icon" />
               </div>
             </div>
-            <hr />
+            <hr  className="dashboard__line"/>
             <div className="dashboard__items" onClick={handlePost}>
               <h4 className="dashboard__post">Post</h4>
               <div>
                 <BiChevronRight className="dashboard__icon" />
               </div>
             </div>
-            <hr />
+            <hr className="dashboard__line"/>
             <div className="dashboard__items" onClick={handleGallery}>
               <h4 className="dashboard__gallery">Gallery</h4>
               <div>
                 <BiChevronRight className="dashboard__icon" />
               </div>
             </div>
-            <hr />
+            <hr className="dashboard__line"/>
             <div className="dashboard__items" onClick={handleTodo}>
               <h4 className="dashboard__todo">ToDo</h4>
               <div>
                 <BiChevronRight className="dashboard__icon" />
               </div>
             </div>
-            <hr />
+            <hr className="dashboard__line"/>
           </div>
         </div>
         <div className="dashboard__right">{children}</div>

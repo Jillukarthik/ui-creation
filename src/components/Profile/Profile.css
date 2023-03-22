@@ -1,0 +1,154 @@
+.profile {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  left: 24px;
+  top: 5px;
+}
+
+.profile__title {
+  font-size: 19px;
+  font-weight: 600;
+}
+.profile__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 12px;
+}
+
+.profile__account {
+  display: flex;
+  align-items: center;
+}
+.profile__accountimage {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+}
+
+.profile__accountname {
+  min-width: 30px;
+  max-width: 130px;
+  margin-left: 12px;
+}
+
+.profile__accountline {
+  width: 98%;
+  margin: auto;
+  position: relative;
+  top: 8px;
+}
+
+.profile__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile__footerleft {
+  width: 40%;
+  margin-top: 40px;
+}
+
+.profile__footerright {
+  width: 60%;
+}
+
+.profile__footerleftDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile__footerleftimage {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+.profile__fontp {
+  font-size: 20px;
+  font-weight: 500;
+  color: #e8e8e8;
+}
+.profile__fonts {
+  font-size: 20px;
+  font-weight: 500;
+  color: #595959;
+}
+
+
+.profile__line {
+  margin-top: 27px;
+}
+.profile__footerright {
+  margin-left: 24px;
+  margin-top: 24px;
+}
+
+.profile__addressdetails {
+  position: relative;
+  left: 32px;
+  width: 300px;
+  height: 25vh;
+}
+
+.profile__map {
+  width: 90%;
+  height: 350px;
+  left: 30px;
+  border-radius: 20px;
+}
+
+.profile__latlong {
+  display: flex;
+  justify-content: end;
+  margin-right: 70px;
+}
+
+.profile__chat {
+  float: right;
+  min-width: 300px;
+  max-width: 500px;
+  margin-top: 10px;
+}
+.profile__data{
+  font-size: 20px;
+  font-weight: 500;
+  color: #d5d5d5;
+}
+
+.profile__datauser {
+  width: 100px;
+  clear: left;
+  float: left;
+  text-align: right;
+  padding-right: 2px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #d5d5d5;
+}
+
+
+
+.profile__companydel{
+  font-size: 20px;
+  font-weight: 500;
+  color: #595959;
+}
+
+.profile__datauserfont{
+  font-size: 20px;
+  font-weight: 500;
+  color: #595959;
+}
+
+#profile__companycatch{
+  max-width: 34px;
+  height: 7px;
+}
+
+.profile__footerbottomleft, .profile__data, .profile__footerright p{
+  margin-top: 8px;
+}
