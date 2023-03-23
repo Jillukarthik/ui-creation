@@ -76,6 +76,7 @@
   font-size: 20px;
   font-weight: 500;
   color: #595959;
+  margin-top: 12px;
 }
 
 
@@ -120,7 +121,7 @@
 }
 
 .profile__datauser {
-  width: 100px;
+  width: 160px;
   clear: left;
   float: left;
   text-align: right;

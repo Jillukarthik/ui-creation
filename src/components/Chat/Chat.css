@@ -1,3 +1,8 @@
+.chat{
+  margin-left: 58px;
+}
+
+
 .chat__message {
   border: 1px solid black;
   display: flex;
@@ -22,8 +27,8 @@
   border-top-right-radius: 10px;
   border: none;
   position: absolute;
-  top: 371px;
-  right: 116px;
+  top: 370px;
+  right: 62.5px;
   background-color: #3679ec;
   color: #ffffff;
 }
@@ -44,7 +49,7 @@
   position: fixed;
   bottom: 0;
   right: 0;
-  left: 76%;
+  left: 79.5%;
   height: 300px;
   width: 200px;
   background-color:#ffffff;
