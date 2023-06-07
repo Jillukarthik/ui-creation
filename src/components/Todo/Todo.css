@@ -22,3 +22,8 @@
     height: 90vh;
     color: #eeeeee;
 }
+
+.todo__chat{
+  position: relative;
+  margin-left: 80%;
+}

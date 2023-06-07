@@ -1,0 +1,9 @@
+.post{
+    height: 90vh;
+}
+
+.post__chat{
+    float: right;
+    position: relative;
+    top: -23px;
+}

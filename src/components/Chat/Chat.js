@@ -1,9 +1,15 @@
-import React, { useState } from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { FiMessageSquare, FiChevronUp, FiChevronDown } from "react-icons/fi";
 import "./Chat.css";
-function Chat({data}) {
+function Chat() {
   const [popUp, setPopup] = useState(false);
-console.log(data,"cfghjkl")
+  const [set, setdata] = useState([]);
+  useEffect(() => {
+    axios
+      .get("https://panorbit.in/api/users.json")
+      .then((x) => setdata(x.data.users));
+  }, []);
   return (
     <div className="chat">
       <div>
@@ -18,7 +24,7 @@ console.log(data,"cfghjkl")
         </div>
         <div className={`chatbox ${popUp ? 'open' : ''}`}>
         <div>
-            {data.map((x)=>(
+            {set.map((x)=>(
                 <div className="chat__group">
                     <img className="chat__image" src={x.profilepicture} alt={x.name}/>
                     <p className="chat__name">{x.name}</p>

@@ -1,4 +1,3 @@
-import React from "react";
 import "./Dashboard.css";
 import { BiChevronRight } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
@@ -6,20 +5,26 @@ function Dashboard({ children }) {
   const navigate = useNavigate();
 
   const handleProfile = () => {
-    navigate("/profile");
+    navigate(-1);
   };
-
+ 
   const handlePost = () => {
     navigate("/post");
+  
+    
   };
 
   const handleGallery = () => {
     navigate("/gallery");
+   
   };
 
   const handleTodo = () => {
     navigate("/todo");
+   
   };
+
+
 
   return (
     <div className="dashboard">
